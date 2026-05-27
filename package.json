@@ -1,0 +1,43 @@
+{
+  "name": "swap-brackets",
+  "version": "0.0.1",
+  "publisher": "JacobMcCormack",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "license": "MIT",
+  "displayName": "Swap Brackets",
+  "description": "An extension to swap brackets that wrap code from round brackets '(' to curly '{' and back",
+  "categories": [
+    "Other"
+  ],
+  "keywords": [
+    "bracket",
+    "brackets",
+    "bracket swap",
+    "bracket swapper",
+    "swap",
+    "swap brackets"
+  ],
+  "icon": "./swapBrackets.png",
+  "activationEvents": [
+    "onCommand:swapBrackets.swap"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "swapBrackets.swap",
+        "title": "Swap Brackets"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "swapBrackets.swap",
+        "key": "alt+ctrl+b",
+        "mac": "alt+cmd+b",
+        "when": "editorTextFocus"
+      }
+    ]
+  }
+}
