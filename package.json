@@ -5,6 +5,10 @@
   "engines": {
     "vscode": "^1.60.0"
   },
+  "scripts": {
+    "package": "vsce package",
+    "publish": "vsce publish"
+  },
   "license": "MIT",
   "displayName": "Swap Brackets",
   "description": "An extension to swap brackets that wrap code from round brackets '(' to curly '{' and back",
@@ -20,6 +24,9 @@
     "swap brackets"
   ],
   "icon": "./swapBrackets.png",
+  "repository": {
+    "url": "https://github.com/Moolteepass/Swap-Brackets"
+  },
   "activationEvents": [
     "onCommand:swapBrackets.swap"
   ],
@@ -39,5 +46,8 @@
         "when": "editorTextFocus"
       }
     ]
+  },
+  "devDependencies": {
+    "@vscode/vsce": "^3.9.1"
   }
 }
